@@ -15,13 +15,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 body {
-    font-family: 'Poppins', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    text-align: center;
+    color: var(--grayish-blue);
     max-width: 480px;
     width: 90%;
     margin: 0 auto;
@@ -30,8 +31,81 @@ img {
     display: block;
     width: 100%;
 }
+button {
+    background-color: var(--pink);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 24px;
+    width: 250px;
+    padding: .8rem 2rem;
+}
 li {
     list-style-type: none;
 }
+h1 {
+    font-size: 1.56rem;
+    margin-bottom: 1.8rem;
+}
+p {
+    font-size: 14.7px;
+}
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--very-dark-cyan);
+}
 
 /* Huddle Landing Page Styles */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/bg-hero-mobile.svg') center top no-repeat;
+    background-size: cover;
+    background-color: var(--very-pale-cyan);
+    z-index: -1;
+}
+#huddle__header {
+    min-height: 100vh;
+    position: relative;
+    padding-top: 2rem;
+}
+.header__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5.5rem;
+}
+.header__logo {
+    width: 120px;
+    height: 100%;
+}
+.header__btn {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--very-dark-cyan);
+    font-size: .8rem;
+    width: 120px;
+    height: 30px;
+    padding: unset;
+    box-shadow: 2px 4px 7px 0px hsl(208, 11%, 55%, 0.3);
+}
+.header__content {
+    padding: 0 1.5rem;
+}
+.header__description {
+    color: var(--very-dark-cyan);
+    margin-bottom: 2rem;
+}
+.header__info .huddle__btn {
+    margin-bottom: 4rem;
+}
+.header__mockup img {
+    position: absolute;
+    left: 0;
+}
