@@ -87,7 +87,7 @@ body::before {
     padding: unset;
     box-shadow: 2px 4px 7px 0px hsl(208, 11%, 55%, 0.3);
 }
-.header__content {
+.header__info {
     padding: 0 1.5rem;
 }
 .header__description {
@@ -96,10 +96,6 @@ body::before {
 }
 .header__info .huddle__btn {
     margin-bottom: 4rem;
-}
-.header__mockup img {
-    position: absolute;
-    left: 0;
 }
 #huddle__main {
     margin-top: 5rem;
@@ -133,6 +129,9 @@ h2.heading {
 }
 img.site__icon {
     width: auto;
+}
+.footer__logo {
+    filter: invert(96%) sepia(97%) saturate(1%) hue-rotate(94deg) brightness(103%) contrast(100%);
 }
 
 
