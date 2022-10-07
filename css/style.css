@@ -44,6 +44,9 @@ h2 {
 p {
     font-size: 14.7px;
 }
+a {
+    text-decoration: none;
+}
 .heading {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -67,6 +70,7 @@ body::before {
     min-height: 100vh;
     position: relative;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .header__intro {
     display: flex;
@@ -119,19 +123,71 @@ h2.heading {
     width: 100%;
     padding: 7rem 1rem 3rem;
     text-align: left;
+    color: hsl(0, 0%, 100%);
+}
+.footer__logo {
+    filter: invert(96%) sepia(97%) saturate(1%) hue-rotate(94deg) brightness(103%) contrast(100%);
+    width: 200px;
+    margin-bottom: 1.5rem;
 }
 .site__location,
 .site__contact,
 .site__email {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
+    gap: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+.site__location {
+    align-items: flex-start;
+}
+.site__email {
+    margin-bottom: 4rem;
+}
+.icon__img {
+    width: 20px;
 }
 img.site__icon {
-    width: auto;
+    width: inherit;
+    object-fit: scale-down;
 }
-.footer__logo {
-    filter: invert(96%) sepia(97%) saturate(1%) hue-rotate(94deg) brightness(103%) contrast(100%);
+.site__description {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.site__links {
+    line-height: 2.5;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+.social__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.8rem;
+}
+.social__link {
+    height: 30px;
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    padding: 1.2rem;
+    position: relative;
+}
+.social__link i {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.copyright__info {
+    font-family: 'Poppins', sans-serif;
+    font-size: .75rem;
+    text-align: center;
 }
 
 
