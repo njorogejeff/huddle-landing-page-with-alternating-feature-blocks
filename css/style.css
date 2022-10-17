@@ -241,7 +241,7 @@ section:not(.huddle__feedback) {
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     body {
         text-align: left;
     }
@@ -306,7 +306,7 @@ section:not(.huddle__feedback) {
         padding: 3rem 1rem 3rem 5rem;
     }
     .flowing__conversations .card__container {
-        flex-direction: row;
+        flex-direction: row !important;
     }
     .mockup__img {
         margin-bottom: 0;
