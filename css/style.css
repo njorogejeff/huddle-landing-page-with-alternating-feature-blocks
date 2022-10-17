@@ -245,6 +245,12 @@ section:not(.huddle__feedback) {
     body {
         text-align: left;
     }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: .95rem !important;
+    }
     #huddle__header {
         background: url('../images/bg-hero-desktop.svg') left top no-repeat;
         background-size: 100vw;
@@ -284,5 +290,41 @@ section:not(.huddle__feedback) {
     .huddle__btn {
         font-size: .8rem;
         height: 50px;
+    }
+    #huddle__main {
+        margin-top: 9rem;
+    }
+    section:not(.huddle__feedback) {
+        margin-bottom: 2.5rem;
+    }
+    .card__container:not(.huddle__feedback .card__container) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        padding: 3rem 1rem 3rem 5rem;
+    }
+    .flowing__conversations .card__container {
+        flex-direction: row;
+    }
+    .mockup__img {
+        margin-bottom: 0;
+    }
+    .huddle__feedback {
+        text-align: center;
+    }
+    .huddle__feedback .card__container {
+        padding: 3rem 1.5rem;
+    }
+    .feedback__title {
+        font-size: 1.7rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    .huddle__feedback .huddle__btn {
+        font-size: 1rem;
+        width: 300px;
+        height: 60px;
+        border-radius: 30px;
     }
 }
